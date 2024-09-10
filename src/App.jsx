@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import axios from 'axios';
-import WeatherInformations from './components/WeatherInformations/WeatherInformations';
+import WeatherInformations from './components/WeatherInformations/WeatherInformations.jsx';
 
 function App() {
   const [weather, setWeather] = useState({})
@@ -21,8 +21,8 @@ function App() {
     <div>
       <h1>Previsão do Tempo</h1>
       <input ref={inputRef} type="text" placeholder='Digite o nome da cidade' />
-      <button onClick={searchCity} >Buscar</button>
-      <WeatherInformations weather={ weather} />
+      <button onClick={searchCity}>Buscar</button>
+      <WeatherInformations weathers={weather} />
     </div>
   )
 }
