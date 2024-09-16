@@ -14,6 +14,7 @@ function App() {
 
     const apiDataWeather = await axios.get(url);
     setWeather(apiDataWeather.data);
+    // console.log(weather)
 
   }
 
